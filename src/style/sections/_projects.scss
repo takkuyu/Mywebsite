@@ -24,6 +24,19 @@
       }
     }
 
+    .list-top{
+      background: linear-gradient(135deg, #f12711 0%, #f5af19 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight:bold;
+    }
+
+    .list-main{
+      font-family: 'Montserrat', sans-serif; 
+      font-size: 1.6rem; 
+      margin-bottom: 25px;
+    }
+
     &__text {
       text-align: left;
 
@@ -51,7 +64,7 @@
 
     &__image {
       width: 90%;
-      margin: 0 auto;
+      margin: 30px auto 0;
 
       @include respond(tab-land) {
         width: 100%;
@@ -76,3 +89,4 @@
     }
   }
 }
+

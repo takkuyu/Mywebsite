@@ -16,10 +16,11 @@
   z-index: -1;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
+  // background: url("https://cdn.pixabay.com/photo/2017/08/06/09/27/laptop-2590647_960_720.jpg");
+  background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://cdn.pixabay.com/photo/2017/08/06/09/27/laptop-2590647_960_720.jpg');
+  // background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
