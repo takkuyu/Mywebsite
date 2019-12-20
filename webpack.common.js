@@ -11,6 +11,17 @@ module.exports = {
         use: ["html-loader"]
       },
       {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }  
+          }
+        ]
+      },
+      {
         test: /\.(jpg|jpeg|png|gif|svg|pdf)$/,
         use: [
           {

@@ -1,6 +1,8 @@
 // import initTilt from './js/tilt';
 import initSr from './js/sr';
 import './style/main.scss';
+import mov from './assets/Maze-Game.mp4';
+
 
 $('a[href^="#"]').on('click', function(event) {
   var target = $(this.getAttribute('href'));
@@ -17,5 +19,13 @@ $('a[href^="#"]').on('click', function(event) {
   }
 });
 
+function render_arrows() {
+  let vidtag;
+  vidtag = document.getElementById('video');
+  vidtag.src = mov;
+}
+
 initSr();
 // initTilt();
+render_arrows();
+
