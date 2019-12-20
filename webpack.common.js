@@ -8,10 +8,26 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
-        use: ["html-loader"]
+        use: {
+          loader: "html-loader",
+          options: {
+            attrs: [":src"]
+          }
+        }
       },
       {
-        test: /\.(jpg|jpeg|png|gif|svg|pdf)$/,
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }  
+          }
+        ]
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|svg|pdf|mp4)$/,
         use: [
           {
             loader: "file-loader",
